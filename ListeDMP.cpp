@@ -44,7 +44,8 @@ void ListeDMP::Add( const DMP &dmp_to_add )
 
 long ListeDMP::Count(bool specification, char* pszDMP)
 // Algorithme :
-//
+// On parcours tous les membres de la liste. Si il n'y a pas de specification
+// ou si la specification est verifiee, on increment le nombre de resultats.
 {
     long result = 0;
     ListeDMP * current = this;
@@ -86,7 +87,7 @@ long ListeDMP::Find(const DMP &dmp_to_find, int firstPosition)
 
 char * ListeDMP::GetData(float fx, float fy)
 // Algorithme :
-//
+// On parcourt chaque element de la liste jusqu'a trouver une DMP aux coordonnees indiquees
 {
     ListeDMP * current = this;
     while(!current->isEmpty){
@@ -103,7 +104,6 @@ ListeDMP & ListeDMP::operator = ( const ListeDMP & unListeDMP )
 // Algorithme :
 //
 {
-    cout<<"!"<<endl;
     dmp = unListeDMP.dmp;
     nextList = unListeDMP.nextList;
     isEmpty = unListeDMP.isEmpty;
@@ -119,7 +119,6 @@ ListeDMP::ListeDMP ( const ListeDMP & unListeDMP )
 #ifdef MAP
     cout << "Appel au constructeur de copie de <ListeDMP>" << endl;
 #endif
-    cout<<"CDC :"<<this<<endl;
 } //----- Fin de ListeDMP (constructeur de copie)
 
 
@@ -131,10 +130,8 @@ ListeDMP::ListeDMP ( )
     cout << "Appel au constructeur de <ListeDMP>" << endl;
 #endif
 
-    //cout<<"Debut de construction de :"<<this<<endl;
     this->nextList = 0;
     this->isEmpty = true;
-    //cout<<"Fin de construction de :"<<this<<endl;
 
 } //----- Fin de ListeDMP
 
