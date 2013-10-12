@@ -13,15 +13,15 @@
 
 //--------------------------------------------------- Interfaces utilisées
 
-//------------------------------------------------------------- Constantes 
+//------------------------------------------------------------- Constantes
 
-//------------------------------------------------------------------ Types 
+//------------------------------------------------------------------ Types
 
-//------------------------------------------------------------------------ 
+//------------------------------------------------------------------------
 // Rôle de la classe <ListeDMP>
 //
 //
-//------------------------------------------------------------------------ 
+//------------------------------------------------------------------------
 
 class ListeDMP
 {
@@ -35,7 +35,13 @@ public:
     // Contrat :
     //
 
-	void Add( DMP fdmp );
+	void Add( const DMP &dmp_to_add );
+    // Mode d'emploi :
+    //
+    // Contrat : Méthode récursive, appeler Find avant pour ne pas ajouter deux fois un élément.
+    //
+
+    long Count(bool specification = false, char* pszDMP = 0);
     // Mode d'emploi :
     //
     // Contrat :
@@ -46,6 +52,14 @@ public:
 	//
 	// Contrat :
 	//
+
+	long Find(const DMP &dmp_to_add, int firstPosition = 0);
+	// Mode d'emploi :
+	//
+	// Contrat :
+	//
+
+	char * GetData(float x, float y);
 
 
 //------------------------------------------------- Surcharge d'opérateurs
@@ -76,14 +90,14 @@ public:
     // Contrat :
     //
 
-//------------------------------------------------------------------ PRIVE 
+//------------------------------------------------------------------ PRIVE
 
 protected:
 //----------------------------------------------------- Méthodes protégées
 
 //----------------------------------------------------- Attributs protégés
 
-ListeDMP * nextDMP;
+ListeDMP * nextList;
 DMP dmp;
 bool isEmpty;
 

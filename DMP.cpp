@@ -32,15 +32,43 @@ void DMP::Display()
 	cout<<"("<<x<<","<<y<<")-> "<<element<<endl;
 } //----- Fin de Méthode
 
+bool DMP::Equal( const DMP & unDMP) const
+// Algorithme :
+//
+{
+	return (x==unDMP.x)&&(y==unDMP.y)&&(element==unDMP.element);
+} //----- Fin de operator =
 
+char * DMP::GetElement() const
+// Algorithme :
+//
+{
+    return element;
+}
+
+float DMP::GetX() const
+// Algorithme :
+//
+{
+    return x;
+}
+
+float DMP::GetY() const
+// Algorithme :
+//
+{
+    return y;
+}
 
 //------------------------------------------------- Surcharge d'opérateurs
 DMP & DMP::operator = ( const DMP & unDMP )
 // Algorithme :
 //
 {
-	DMP d(*this);
-	return d;
+    element = unDMP.element;
+    x = unDMP.x;
+    y = unDMP.y;
+	return *this;
 } //----- Fin de operator =
 
 
