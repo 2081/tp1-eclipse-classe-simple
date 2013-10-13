@@ -133,7 +133,7 @@ ListeDMP::ListeDMP ( )
     this->nextList = 0;
     this->isEmpty = true;
 
-} //----- Fin de ListeDMP
+    } //----- Fin de ListeDMP
 
 
 

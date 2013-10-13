@@ -8,8 +8,8 @@
 //---------- Interface de la classe <Cartography> (fichier Cartography.h) ------
 #if ! defined ( CARTOGRAPHY_H_ )
 #define CARTOGRAPHY_H_
-#test
 #include "DMP.h"
+#include "ListeDMP.h"
 
 //--------------------------------------------------- Interfaces utilisées
 
@@ -66,7 +66,7 @@ public:
 	// Contrat :
 	//
 
-	char * GetData(float x, float y) ;
+	char * GetData(float fX, float fY) ;
 	// Mode d'emploi :
 	//
 	// Contrat :
@@ -106,7 +106,7 @@ protected:
 //----------------------------------------------------- Méthodes protégées
 
 //----------------------------------------------------- Attributs protégés
-    DMP listeDMP[];
+    ListeDMP listdmp;
 
 
 };

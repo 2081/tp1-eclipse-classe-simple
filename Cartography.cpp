@@ -1,90 +1,94 @@
 /*************************************************************************
                            Cartography  -  description
                              -------------------
-    dÃ©but                : 11 oct. 2013
+    début                : 11 oct. 2013
     copyright            : (C) 2013 par kantoine
 *************************************************************************/
 
-//---------- RÃ©alisation de la classe <Cartography> (fichier Cartography.cpp) -------
+//---------- Réalisation de la classe <Cartography> (fichier Cartography.cpp) -------
 
 //---------------------------------------------------------------- INCLUDE
 
-//-------------------------------------------------------- Include systÃ¨me
+//-------------------------------------------------------- Include système
 using namespace std;
 #include <iostream>
 
 //------------------------------------------------------ Include personnel
 #include "Cartography.h"
+#include "ListeDMP.h"
 
 //------------------------------------------------------------- Constantes
 
 //----------------------------------------------------------------- PUBLIC
 
-//----------------------------------------------------- MÃ©thodes publiques
-// type Cartography::MÃ©thode ( liste des paramÃ¨tres )
+//----------------------------------------------------- Méthodes publiques
+// type Cartography::Méthode ( liste des paramètres )
 // Algorithme :
 //
 //{
-//} //----- Fin de MÃ©thode
-bool Cartography::Add(float fX, float fY, char* pszDMP)
+//} //----- Fin de Méthode
+bool Cartography::Add(float fX, float fY, char * pszDMP)
 // Algorithme :
 //
 {
-	/*
-	int taille=sizeof(ListeDMP)+1;
-	DMP listeDMP2[taille];
-	for (int i = 0; i<taille -1; i++){
-		ListeDMP2[i]=ListeDMP[i];
-	}
-	DMP dmp(fX,fY,pszDMP);
-	ListeDMP2[taille]=dmp;
-	ListeDMP
-	*/
-
-
-	return false;
-} //----- Fin de MÃ©thode
+    listdmp.Add(DMP(fX,fY,pszDMP));
+    return false;
+} //----- Fin de Méthode
 
 long Cartography::Count()
 // Algorithme :
 //
 {
-	return 0;
-} //----- Fin de MÃ©thode
+    long result;
+    result = listdmp.Count();
+    return result;
+} //----- Fin de Méthode
 
 
 long Cartography::Count(char* pszDMP)
 // Algorithme :
 //
 {
-	return 0;
-} //----- Fin de MÃ©thode
+    long result;
+    bool spec=true;
+    result = listdmp.Count(spec,pszDMP);
+    return result;
+} //----- Fin de Méthode
 
 
 void Cartography::Display()
 // Algorithme :
 //
 {
-} //----- Fin de MÃ©thode
+    listdmp.Display();
+} //----- Fin de Méthode
 
 
 long Cartography::FindDMP(char* pszDMP, long lFirstPos, float& fX, float& fY)
 // Algorithme :
 //
 {
-	return 0;
-} //----- Fin de MÃ©thode
+//    long dmp;
+//    dmp = listdmp.Find(DMP(fX,fY,pszDMP));
+//    cout << "// Element : " << listdmp.pszDMP << endl;
+//    cout << "// fX : " << listdmp.fX << endl;
+//    cout << "// fY : " << fY << endl;
+    return 0;
+} //----- Fin de Méthode
 
 
-char * Cartography::GetData(float x, float y)
-// Algorithme :
+char * Cartography::GetData(float fX, float fY)
+// Algorithme : /
+//Se contente de récupérer GetData de ListeDMP
 //
 {
-	return 0;
-} //----- Fin de MÃ©thode
+    char * m_element;
+    m_element = listdmp.GetData(fX,fY);
+    return m_element;
+} //----- Fin de Méthode
 
 /*
-//------------------------------------------------- Surcharge d'opÃ©rateurs
+//------------------------------------------------- Surcharge d'opérateurs
 Cartography & Cartography::operator = ( const Cartography & unCartography )
 // Algorithme :
 //
@@ -133,6 +137,6 @@ Cartography::~Cartography ( )
 
 
 
-//----------------------------------------------------- MÃ©thodes protÃ©gÃ©es
+//----------------------------------------------------- Méthodes protégées
 
 
