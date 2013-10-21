@@ -1,0 +1,4 @@
+﻿
+Document d'évaluation du TP1
+
+-Directive principale : Explication du choix de la création d'une classe liste et de pointeurs au lieu de l'utilisation de tableaux pour stocker les DMP. Pourquoi c'est mieux en terme de mémoire.

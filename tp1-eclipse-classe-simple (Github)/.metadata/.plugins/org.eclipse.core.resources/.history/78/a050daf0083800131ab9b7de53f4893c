@@ -1,0 +1,182 @@
+/*
+ * B3408_tests.cpp
+ *
+ *  Created on: 18 oct. 2013
+ *      Author: rnicolet
+ */
+
+
+#include <iostream>
+#include "Cartography.h"
+#include "DMP.h"
+#include "ListeDMP.h"
+
+using namespace std;
+
+class Tests
+{
+public :
+	Tests();
+private :
+
+	bool T01();
+	bool T02();
+	bool T03();
+	bool T04();
+	bool T05();
+	bool T06();
+	bool T07_1();
+	bool T07_2();
+	bool T07_3();
+	bool T08();
+	bool T09();
+
+	void Afficher(int numTest,bool testValue, char* description);
+};
+
+int main() {
+	Tests test;
+}
+
+bool Tests::T01(){ // Liste Vide
+	ListeDMP ldmp;
+	long c = ldmp.Count();
+	return c == 0 ? true : false;
+}
+
+bool Tests::T02(){ // 3 dmp totalement differentes
+	Cartography carto;
+
+	carto.Add(0,0,"H2O");
+	carto.Add(2,3,"H1O");
+	carto.Add(4,5,"H3O");
+
+	long c = carto.Count();
+	return c == 3 ? true : false;
+}
+
+bool Tests::T03(){ // 3 dmp differentes, 2 elements identiques
+	Cartography carto;
+
+	carto.Add(0,0,"H2O");
+	carto.Add(2,3,"H2O");
+	carto.Add(4,5,"H3O");
+
+	long c = carto.Count();
+	return c == 3 ? true : false;
+}
+
+bool Tests::T04(){ // Liste Vide
+	Cartography carto;
+	long c = carto.Count("H2O");
+	return c == 0 ? true : false;
+}
+
+bool Tests::T05(){ // 3 dmp totalement differentes
+	Cartography carto;
+
+	carto.Add(0,0,"H2O");
+	carto.Add(2,3,"H1O");
+	carto.Add(4,5,"H3O");
+
+	long c = carto.Count("CO2");
+	return c == 0 ? true : false;
+}
+
+bool Tests::T06(){ // 3 dmp differentes, 2 elements identiques
+	Cartography carto;
+
+	carto.Add(0,0,"H2O");
+	carto.Add(2,3,"H2O");
+	carto.Add(4,5,"H3O");
+
+	long c = carto.Count("CO2");
+	return c == 0 ? true : false;
+}
+
+bool Tests::T07_1(){ // Element present une fois
+	Cartography carto;
+
+	carto.Add(0,0,"H2O");
+	carto.Add(2,3,"H1O");
+	carto.Add(4,5,"H3O");
+
+	long c = carto.Count("H2O");
+	return c == 1 ? true : false;
+}
+
+bool Tests::T07_2(){ // Element present une fois
+	Cartography carto;
+
+	carto.Add(0,0,"H2O");
+	carto.Add(2,3,"H1O");
+	carto.Add(4,5,"H3O");
+
+	long c = carto.Count("H1O");
+	return c == 1 ? true : false;
+}
+
+bool Tests::T07_3(){ // Element present une fois
+	Cartography carto;
+
+	carto.Add(0,0,"H2O");
+	carto.Add(2,3,"H1O");
+	carto.Add(4,5,"H3O");
+
+	long c = carto.Count("H3O");
+	return c == 1 ? true : false;
+}
+
+bool Tests::T08(){ // Element plusieurs fois présent
+	Cartography carto;
+
+	carto.Add(1,2,"H1O");
+	carto.Add(0,0,"H2O");
+	carto.Add(2,3,"H1O");
+	carto.Add(4,5,"H3O");
+	carto.Add(1,4,"H1O");
+
+	long c = carto.Count("H1O");
+	return c == 3 ? true : false;
+}
+
+bool Tests::T09(){ // Chaine nulle
+	Cartography carto;
+
+	carto.Add(1,2,"H1O");
+	carto.Add(0,0,"H2O");
+	carto.Add(2,3,"H1O");
+	carto.Add(4,5,"H3O");
+	carto.Add(1,4,"H1O");
+
+	long c = carto.Count("");
+	return c == 0 ? true : false;
+}
+
+void Tests::Afficher(int numTest, bool testValue, char* description){
+
+	cout<<"Test_"<<(numTest<10 ? "0" : "")<<numTest<<" : "<<description<<endl;
+	cout<<(testValue?"OK":"PAS OK")<<endl;
+
+}
+
+
+Tests::Tests()
+{
+	Afficher(1,T01(),"");
+	Afficher(1,T02(),"");
+	Afficher(1,T03(),"");
+	Afficher(1,T04(),"");
+	Afficher(1,T05(),"");
+	Afficher(1,T06(),"");
+	Afficher(1,T07_1(),"");
+	Afficher(1,T07_2(),"");
+	Afficher(1,T07_3(),"");
+	Afficher(1,T08(),"");
+	Afficher(1,T10(),"");
+
+}
+
+
+
+

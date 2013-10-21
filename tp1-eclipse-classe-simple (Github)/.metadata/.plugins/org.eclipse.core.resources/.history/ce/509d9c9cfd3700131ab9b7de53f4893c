@@ -1,0 +1,31 @@
+/*
+ * B3408_tests.cpp
+ *
+ *  Created on: 18 oct. 2013
+ *      Author: rnicolet
+ */
+
+
+#include <iostream>
+#include "Cartography.h"
+#include "DMP.h"
+#include "ListeDMP.h"
+
+using namespace std;
+
+int main() {
+
+}
+
+bool T01(){
+	ListeDMP ldmp;
+	long c = ldmp.Count();
+	return c == 0 ? true : false;
+}
+
+bool T02(){
+	ListeDMP ldmp;
+	long c = ldmp.Count();
+	return c == 0 ? true : false;
+}
+

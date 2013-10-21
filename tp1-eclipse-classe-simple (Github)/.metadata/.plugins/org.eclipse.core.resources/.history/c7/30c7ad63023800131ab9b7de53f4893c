@@ -1,0 +1,139 @@
+/*
+ * B3408_tests.cpp
+ *
+ *  Created on: 18 oct. 2013
+ *      Author: rnicolet
+ */
+
+
+#include <iostream>
+#include "Cartography.h"
+#include "DMP.h"
+#include "ListeDMP.h"
+
+using namespace std;
+
+class Tests
+{
+public :
+	Tests();
+private :
+	bool T01();
+	bool T02();
+	bool T03();
+	bool T04();
+	bool T05();
+	bool T06();
+};
+
+int main() {
+	Tests test;
+}
+
+bool Tests::T01(){ // Liste Vide
+	ListeDMP ldmp;
+	long c = ldmp.Count();
+	return c == 0 ? true : false;
+}
+
+bool Tests::T02(){ // 3 dmp totalement differentes
+	ListeDMP ldmp;
+	char str_tab[] = {'H','2','O','\0'};
+	char * str = str_tab;
+	DMP d1(0,0,str);
+	char str2_tab[] = {'H','1','O','\0'};
+	char * str2 = str2_tab;
+	DMP d2(2,3,str2);
+	char str3_tab[] = {'H','3','O','\0'};
+	char * str3 = str3_tab;
+	DMP d3(4,5,str3);
+
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+	ldmp.Add(d3);
+
+	long c = ldmp.Count();
+	return c == 3 ? true : false;
+}
+
+bool Tests::T03(){ // 3 dmp differentes, 2 elements identiques
+	ListeDMP ldmp;
+	char str_tab[] = {'H','2','O','\0'};
+	char * str = str_tab;
+	DMP d1(0,0,str);
+	char str2_tab[] = {'H','2','O','\0'};
+	char * str2 = str2_tab;
+	DMP d2(2,3,str2);
+	char str3_tab[] = {'H','3','O','\0'};
+	char * str3 = str3_tab;
+	DMP d3(4,5,str3);
+
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+	ldmp.Add(d3);
+
+	long c = ldmp.Count();
+	return c == 3 ? true : false;
+}
+
+bool Tests::T04(){ // Liste Vide
+	ListeDMP ldmp;
+	long c = ldmp.Count("H2O");
+	return c == 0 ? true : false;
+}
+
+bool Tests::T05(){ // 3 dmp totalement differentes
+	ListeDMP ldmp;
+	char str_tab[] = {'H','2','O','\0'};
+	char * str = str_tab;
+	DMP d1(0,0,str);
+	char str2_tab[] = {'H','1','O','\0'};
+	char * str2 = str2_tab;
+	DMP d2(2,3,str2);
+	char str3_tab[] = {'H','3','O','\0'};
+	char * str3 = str3_tab;
+	DMP d3(4,5,str3);
+
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+	ldmp.Add(d3);
+
+	long c = ldmp.Count("CO2");
+	return c == 0 ? true : false;
+}
+
+bool Tests::T06(){ // 3 dmp differentes, 2 elements identiques
+	ListeDMP ldmp;
+	char str_tab[] = {'H','2','O','\0'};
+	char * str = str_tab;
+	DMP d1(0,0,str);
+	char str2_tab[] = {'H','2','O','\0'};
+	char * str2 = str2_tab;
+	DMP d2(2,3,str2);
+	char str3_tab[] = {'H','3','O','\0'};
+	char * str3 = str3_tab;
+	DMP d3(4,5,str3);
+
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+	ldmp.Add(d3);
+
+	long c = ldmp.Count("CO2");
+	return c == 3 ? true : false;
+}
+
+Tests::Tests()
+{
+	cout<<"Test_01"<<endl;
+	cout<<(T01()?"OK":"PAS OK")<<endl;
+	cout<<"Test_02"<<endl;
+	cout<<(T02()?"OK":"PAS OK")<<endl;
+	cout<<"Test_03"<<endl;
+	cout<<(T03()?"OK":"PAS OK")<<endl;
+	cout<<"Test_04"<<endl;
+	cout<<(T04()?"OK":"PAS OK")<<endl;
+}
+
+
+
+

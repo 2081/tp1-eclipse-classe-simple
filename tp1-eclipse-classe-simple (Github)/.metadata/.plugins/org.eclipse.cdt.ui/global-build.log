@@ -1,0 +1,1304 @@
+14:10:15 **** Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+Finished building: ../Cartography.cpp
+ 
+Building file: ../DMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DMP.d" -MT"DMP.d" -o "DMP.o" "../DMP.cpp"
+Finished building: ../DMP.cpp
+ 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+Finished building: ../ListeDMP.cpp
+ 
+Building file: ../test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test.d" -MT"test.d" -o "test.o" "../test.cpp"
+../test.cpp: In function ‘int main()’:
+../test.cpp:25:24: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../test.cpp:28:24: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../test.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+14:14:49 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test.d" -MT"test.d" -o "test.o" "../test.cpp"
+Finished building: ../test.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+14:15:24 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+14:45:26 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+In file included from ../Cartography.cpp:17:0:
+../Cartography.h:109:5: erreur: ‘ListeDMP’ does not name a type
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:5: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::Count()’:
+../Cartography.cpp:45:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::Count(char*)’:
+../Cartography.cpp:53:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘void Cartography::Display()’:
+../Cartography.cpp:62:2: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:20: erreur: no matching function for call to ‘DMP::DMP(char*&, int, int)’
+../Cartography.cpp:75:20: note: candidates are:
+In file included from ../Cartography.h:12:0,
+                 from ../Cartography.cpp:17:
+../DMP.h:87:5: note: DMP::DMP(float, float, char*)
+../DMP.h:87:5: note:   no known conversion for argument 1 from ‘char*’ to ‘float’
+../DMP.h:81:5: note: DMP::DMP()
+../DMP.h:81:5: note:   candidate expects 0 arguments, 3 provided
+../DMP.h:75:5: note: DMP::DMP(const DMP&)
+../DMP.h:75:5: note:   candidate expects 1 argument, 3 provided
+../Cartography.cpp:76:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp:76:40: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:40: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:76:40: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:77:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+../Cartography.cpp: In member function ‘long int Cartography::Count(char*)’:
+../Cartography.cpp:54:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+../Cartography.cpp: In member function ‘long int Cartography::Count()’:
+../Cartography.cpp:46:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:46:20 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+In file included from ../Cartography.cpp:17:0:
+../Cartography.h:109:5: erreur: ‘ListeDMP’ does not name a type
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:5: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::Count()’:
+../Cartography.cpp:45:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::Count(char*)’:
+../Cartography.cpp:53:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘void Cartography::Display()’:
+../Cartography.cpp:62:2: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:24: erreur: no matching function for call to ‘DMP::DMP(char*&, double, double)’
+../Cartography.cpp:75:24: note: candidates are:
+In file included from ../Cartography.h:12:0,
+                 from ../Cartography.cpp:17:
+../DMP.h:87:5: note: DMP::DMP(float, float, char*)
+../DMP.h:87:5: note:   no known conversion for argument 1 from ‘char*’ to ‘float’
+../DMP.h:81:5: note: DMP::DMP()
+../DMP.h:81:5: note:   candidate expects 0 arguments, 3 provided
+../DMP.h:75:5: note: DMP::DMP(const DMP&)
+../DMP.h:75:5: note:   candidate expects 1 argument, 3 provided
+../Cartography.cpp:76:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp:76:40: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:40: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:76:40: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:77:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+../Cartography.cpp: In member function ‘long int Cartography::Count(char*)’:
+../Cartography.cpp:54:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+../Cartography.cpp: In member function ‘long int Cartography::Count()’:
+../Cartography.cpp:46:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:47:03 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+In file included from ../Cartography.cpp:17:0:
+../Cartography.h:109:5: erreur: ‘ListeDMP’ does not name a type
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:5: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::Count()’:
+../Cartography.cpp:45:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::Count(char*)’:
+../Cartography.cpp:53:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘void Cartography::Display()’:
+../Cartography.cpp:62:2: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+../Cartography.cpp: In member function ‘long int Cartography::Count(char*)’:
+../Cartography.cpp:54:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+../Cartography.cpp: In member function ‘long int Cartography::Count()’:
+../Cartography.cpp:46:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:47:27 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+In file included from ../Cartography.cpp:17:0:
+../Cartography.h:109:5: erreur: ‘ListeDMP’ does not name a type
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:5: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::Count()’:
+../Cartography.cpp:45:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::Count(char*)’:
+../Cartography.cpp:53:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘void Cartography::Display()’:
+../Cartography.cpp:62:2: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+../Cartography.cpp: In member function ‘long int Cartography::Count(char*)’:
+../Cartography.cpp:54:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+../Cartography.cpp: In member function ‘long int Cartography::Count()’:
+../Cartography.cpp:46:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:48:00 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+In file included from ../Cartography.cpp:17:0:
+../Cartography.h:109:5: erreur: ‘ListeDMP’ does not name a type
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:5: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::Count()’:
+../Cartography.cpp:45:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::Count(char*)’:
+../Cartography.cpp:53:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘void Cartography::Display()’:
+../Cartography.cpp:62:2: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:9: erreur: ‘liste’ was not declared in this scope
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+../Cartography.cpp: In member function ‘long int Cartography::Count(char*)’:
+../Cartography.cpp:54:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+../Cartography.cpp: In member function ‘long int Cartography::Count()’:
+../Cartography.cpp:46:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:49:20 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: erreur: default argument missing for parameter 3 of ‘long int ListeDMP::Find(const DMP&, long int, int&, int&)’
+../ListeDMP.h:56:7: erreur: default argument missing for parameter 4 of ‘long int ListeDMP::Find(const DMP&, long int, int&, int&)’
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:51: erreur: no matching function for call to ‘ListeDMP::Find(DMP, long int&, float&, float&)’
+../Cartography.cpp:75:51: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, long int, int&, int&)
+../ListeDMP.h:56:7: note:   no known conversion for argument 3 from ‘float’ to ‘int&’
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:49:48 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: erreur: default argument missing for parameter 3 of ‘long int ListeDMP::Find(const DMP&, long int, int&, int&)’
+../ListeDMP.h:56:7: erreur: default argument missing for parameter 4 of ‘long int ListeDMP::Find(const DMP&, long int, int&, int&)’
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:51: erreur: no matching function for call to ‘ListeDMP::Find(DMP, long int&, float&, float&)’
+../Cartography.cpp:75:51: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, long int, int&, int&)
+../ListeDMP.h:56:7: note:   no known conversion for argument 3 from ‘float’ to ‘int&’
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:57:51 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:19: erreur: no matching function for call to ‘ListeDMP::Find(DMP&)’
+../Cartography.cpp:34:19: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   candidate expects 5 arguments, 1 provided
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:51: erreur: no matching function for call to ‘ListeDMP::Find(DMP, long int&, float&, float&)’
+../Cartography.cpp:75:51: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   no known conversion for argument 2 from ‘long int’ to ‘float&’
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:58:13 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:29: erreur: no matching function for call to ‘ListeDMP::Find(DMP&, int, int, bool)’
+../Cartography.cpp:34:29: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   no known conversion for argument 2 from ‘int’ to ‘float&’
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:51: erreur: no matching function for call to ‘ListeDMP::Find(DMP, long int&, float&, float&)’
+../Cartography.cpp:75:51: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   no known conversion for argument 2 from ‘long int’ to ‘float&’
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:58:25 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:33: erreur: no matching function for call to ‘ListeDMP::Find(DMP&, double, double, bool)’
+../Cartography.cpp:34:33: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   no known conversion for argument 2 from ‘double’ to ‘float&’
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:51: erreur: no matching function for call to ‘ListeDMP::Find(DMP, long int&, float&, float&)’
+../Cartography.cpp:75:51: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   no known conversion for argument 2 from ‘long int’ to ‘float&’
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:58:37 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:20: erreur: ‘f0’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:51: erreur: no matching function for call to ‘ListeDMP::Find(DMP, long int&, float&, float&)’
+../Cartography.cpp:75:51: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   no known conversion for argument 2 from ‘long int’ to ‘float&’
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:58:43 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:20: erreur: ‘fx0’ was not declared in this scope
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:51: erreur: no matching function for call to ‘ListeDMP::Find(DMP, long int&, float&, float&)’
+../Cartography.cpp:75:51: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   no known conversion for argument 2 from ‘long int’ to ‘float&’
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+14:59:52 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp:34:20: erreur: suffixe « f » invalide pour une constante entière
+../Cartography.cpp:34:23: erreur: suffixe « f » invalide pour une constante entière
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:51: erreur: no matching function for call to ‘ListeDMP::Find(DMP, long int&, float&, float&)’
+../Cartography.cpp:75:51: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   no known conversion for argument 2 from ‘long int’ to ‘float&’
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+15:00:03 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:43: erreur: no matching function for call to ‘ListeDMP::Find(DMP&, float, float, bool)’
+../Cartography.cpp:34:43: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   no known conversion for argument 2 from ‘float’ to ‘float&’
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:51: erreur: no matching function for call to ‘ListeDMP::Find(DMP, long int&, float&, float&)’
+../Cartography.cpp:75:51: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, float&, float&, bool, long int)
+../ListeDMP.h:56:7: note:   no known conversion for argument 2 from ‘long int’ to ‘float&’
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+15:01:32 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:71: erreur: default argument for parameter of type ‘float&’ has type ‘int’
+../ListeDMP.h:56:86: erreur: default argument for parameter of type ‘float&’ has type ‘int’
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:35:25: erreur: call to ‘long int ListeDMP::Find(const DMP&, bool, float&, float&, long int)’ uses the default argument for parameter 3, which is not yet defined
+../Cartography.cpp:35:25: erreur: call to ‘long int ListeDMP::Find(const DMP&, bool, float&, float&, long int)’ uses the default argument for parameter 4, which is not yet defined
+../Cartography.cpp:34:8: attention : unused variable ‘x’ [-Wunused-variable]
+../Cartography.cpp:34:12: attention : unused variable ‘y’ [-Wunused-variable]
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:76:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:76:52: erreur: expected ‘;’ before ‘)’ token
+make: *** [Cartography.o] Erreur 1
+15:03:02 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:79: erreur: lvalue required as unary ‘&’ operand
+../ListeDMP.h:56:102: erreur: lvalue required as unary ‘&’ operand
+../Cartography.cpp: In member function ‘bool Cartography::Add(float, float, char*)’:
+../Cartography.cpp:34:25: erreur: call to ‘long int ListeDMP::Find(const DMP&, bool, float&, float&, long int)’ uses the default argument for parameter 3, which is not yet defined
+../Cartography.cpp:34:25: erreur: call to ‘long int ListeDMP::Find(const DMP&, bool, float&, float&, long int)’ uses the default argument for parameter 4, which is not yet defined
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+make: *** [Cartography.o] Erreur 1
+15:03:59 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:51: erreur: no matching function for call to ‘ListeDMP::Find(DMP, long int&, float&, float&)’
+../Cartography.cpp:75:51: note: candidates are:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, long int)
+../ListeDMP.h:56:7: note:   candidate expects 2 arguments, 4 provided
+../ListeDMP.h:62:7: note: long int ListeDMP::Find(const DMP&, float&, float&, long int)
+../ListeDMP.h:62:7: note:   no known conversion for argument 2 from ‘long int’ to ‘float&’
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+15:06:48 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+make: *** [Cartography.o] Erreur 1
+15:08:42 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+make: *** [Cartography.o] Erreur 1
+15:09:03 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+make: *** [Cartography.o] Erreur 1
+15:09:55 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:52: erreur: expected ‘;’ before ‘)’ token
+make: *** [Cartography.o] Erreur 1
+15:11:08 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:57: erreur: expected ‘;’ before ‘)’ token
+../Cartography.cpp:75:57: erreur: expected primary-expression before ‘)’ token
+../Cartography.cpp:75:57: erreur: expected ‘;’ before ‘)’ token
+make: *** [Cartography.o] Erreur 1
+15:11:16 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+Finished building: ../Cartography.cpp
+ 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+In file included from ../ListeDMP.h:12:0,
+                 from ../ListeDMP.cpp:17:
+../DMP.h: In member function ‘long int ListeDMP::Find(const DMP&, bool, float&, float&, long int)’:
+../DMP.h:106:8: erreur: ‘char* DMP::element’ is protected
+../ListeDMP.cpp:89:41: erreur: à l'intérieur du contexte
+In file included from ../ListeDMP.h:12:0,
+                 from ../ListeDMP.cpp:17:
+../DMP.h:106:8: erreur: ‘char* DMP::element’ is protected
+../ListeDMP.cpp:89:62: erreur: à l'intérieur du contexte
+In file included from ../ListeDMP.h:12:0,
+                 from ../ListeDMP.cpp:17:
+../DMP.h:105:7: erreur: ‘float DMP::x’ is protected
+../ListeDMP.cpp:90:19: erreur: à l'intérieur du contexte
+In file included from ../ListeDMP.h:12:0,
+                 from ../ListeDMP.cpp:17:
+../DMP.h:105:9: erreur: ‘float DMP::y’ is protected
+../ListeDMP.cpp:91:19: erreur: à l'intérieur du contexte
+make: *** [ListeDMP.o] Erreur 1
+15:15:45 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+../Cartography.cpp: In member function ‘long int Cartography::FindDMP(char*, long int, float&, float&)’:
+../Cartography.cpp:75:56: erreur: no matching function for call to ‘ListeDMP::Find(DMP, bool, float&, float&, long int&)’
+../Cartography.cpp:75:56: note: candidate is:
+In file included from ../Cartography.h:13:0,
+                 from ../Cartography.cpp:17:
+../ListeDMP.h:56:7: note: long int ListeDMP::Find(const DMP&, long int)
+../ListeDMP.h:56:7: note:   candidate expects 2 arguments, 5 provided
+../Cartography.cpp:76:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [Cartography.o] Erreur 1
+15:16:15 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+Finished building: ../Cartography.cpp
+ 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+In file included from ../ListeDMP.h:12:0,
+                 from ../ListeDMP.cpp:17:
+../DMP.h: In member function ‘long int ListeDMP::FindCoord(const DMP&, bool, float&, float&, long int)’:
+../DMP.h:106:8: erreur: ‘char* DMP::element’ is protected
+../ListeDMP.cpp:89:41: erreur: à l'intérieur du contexte
+In file included from ../ListeDMP.h:12:0,
+                 from ../ListeDMP.cpp:17:
+../DMP.h:106:8: erreur: ‘char* DMP::element’ is protected
+../ListeDMP.cpp:89:62: erreur: à l'intérieur du contexte
+In file included from ../ListeDMP.h:12:0,
+                 from ../ListeDMP.cpp:17:
+../DMP.h:105:7: erreur: ‘float DMP::x’ is protected
+../ListeDMP.cpp:90:19: erreur: à l'intérieur du contexte
+In file included from ../ListeDMP.h:12:0,
+                 from ../ListeDMP.cpp:17:
+../DMP.h:105:9: erreur: ‘float DMP::y’ is protected
+../ListeDMP.cpp:91:19: erreur: à l'intérieur du contexte
+make: *** [ListeDMP.o] Erreur 1
+15:18:46 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+Finished building: ../ListeDMP.cpp
+ 
+Building file: ../test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test.d" -MT"test.d" -o "test.o" "../test.cpp"
+Finished building: ../test.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:12:31 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:18:13: erreur: ‘T01’ was not declared in this scope
+../B3408_tests.cpp:20:13: erreur: ‘T02’ was not declared in this scope
+make: *** [B3408_tests.o] Erreur 1
+16:13:39 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:18:13: erreur: ‘T01’ was not declared in this scope
+../B3408_tests.cpp:20:13: erreur: ‘T02’ was not declared in this scope
+make: *** [B3408_tests.o] Erreur 1
+16:17:54 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:18:12: erreur: ‘T01’ was not declared in this scope
+../B3408_tests.cpp:18:29: erreur: invalid operands of types ‘const char [7]’ and ‘<unresolved overloaded function type>’ to binary ‘operator<<’
+../B3408_tests.cpp:20:13: erreur: ‘T02’ was not declared in this scope
+make: *** [B3408_tests.o] Erreur 1
+16:19:17 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:28:13: erreur: ‘T01’ was not declared in this scope
+../B3408_tests.cpp:30:13: erreur: ‘T02’ was not declared in this scope
+make: *** [B3408_tests.o] Erreur 1
+16:19:48 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:28:13: erreur: ‘T01’ was not declared in this scope
+../B3408_tests.cpp:30:13: erreur: ‘T02’ was not declared in this scope
+../B3408_tests.cpp: At global scope:
+../B3408_tests.cpp:79:19: erreur: expected unqualified-id before ‘(’ token
+../B3408_tests.cpp:85:19: erreur: expected unqualified-id before ‘(’ token
+make: *** [B3408_tests.o] Erreur 1
+16:19:53 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:28:13: erreur: ‘T01’ was not declared in this scope
+../B3408_tests.cpp:30:13: erreur: ‘T02’ was not declared in this scope
+../B3408_tests.cpp: At global scope:
+../B3408_tests.cpp:79:19: erreur: expected unqualified-id before ‘(’ token
+../B3408_tests.cpp:85:19: erreur: expected unqualified-id before ‘(’ token
+make: *** [B3408_tests.o] Erreur 1
+16:20:29 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:28:13: erreur: ‘T01’ was not declared in this scope
+../B3408_tests.cpp:30:13: erreur: ‘T02’ was not declared in this scope
+../B3408_tests.cpp: At global scope:
+../B3408_tests.cpp:85:23: erreur: no ‘bool B3408_tests::T05()’ member function declared in class ‘B3408_tests’
+make: *** [B3408_tests.o] Erreur 1
+16:21:31 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:28:26: erreur: cannot call member function ‘bool B3408_tests::T01()’ without object
+../B3408_tests.cpp:30:26: erreur: cannot call member function ‘bool B3408_tests::T02()’ without object
+make: *** [B3408_tests.o] Erreur 1
+16:22:13 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:18:14: erreur: ‘static bool B3408_tests::T01()’ is private
+../B3408_tests.cpp:28:26: erreur: à l'intérieur du contexte
+../B3408_tests.cpp:19:14: erreur: ‘static bool B3408_tests::T02()’ is private
+../B3408_tests.cpp:30:26: erreur: à l'intérieur du contexte
+../B3408_tests.cpp: At global scope:
+../B3408_tests.cpp:33:13: attention : ‘bool T01()’ defined but not used [-Wunused-function]
+../B3408_tests.cpp:39:13: attention : ‘bool T02()’ defined but not used [-Wunused-function]
+../B3408_tests.cpp:59:13: attention : ‘bool T03()’ defined but not used [-Wunused-function]
+../B3408_tests.cpp:79:13: attention : ‘bool T04()’ defined but not used [-Wunused-function]
+../B3408_tests.cpp:85:13: attention : ‘bool T05()’ defined but not used [-Wunused-function]
+../B3408_tests.cpp:105:13: attention : ‘bool T06()’ defined but not used [-Wunused-function]
+make: *** [B3408_tests.o] Erreur 1
+16:22:26 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp:34:13: attention : ‘bool T01()’ defined but not used [-Wunused-function]
+../B3408_tests.cpp:40:13: attention : ‘bool T02()’ defined but not used [-Wunused-function]
+../B3408_tests.cpp:60:13: attention : ‘bool T03()’ defined but not used [-Wunused-function]
+../B3408_tests.cpp:80:13: attention : ‘bool T04()’ defined but not used [-Wunused-function]
+../B3408_tests.cpp:86:13: attention : ‘bool T05()’ defined but not used [-Wunused-function]
+../B3408_tests.cpp:106:13: attention : ‘bool T06()’ defined but not used [-Wunused-function]
+Finished building: ../B3408_tests.cpp
+ 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+Finished building: ../Cartography.cpp
+ 
+Building file: ../DMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DMP.d" -MT"DMP.d" -o "DMP.o" "../DMP.cpp"
+Finished building: ../DMP.cpp
+ 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+Finished building: ../ListeDMP.cpp
+ 
+Building file: ../test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test.d" -MT"test.d" -o "test.o" "../test.cpp"
+Finished building: ../test.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+./test.o: dans la fonction « main »:
+/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../test.cpp:15: définitions multiples de « main »
+./B3408_tests.o:/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../B3408_tests.cpp:27: défini pour la première fois ici
+./B3408_tests.o: dans la fonction « main »:
+B3408_tests.cpp:(.text+0x21): référence indéfinie vers « B3408_tests::T01() »
+B3408_tests.cpp:(.text+0x6c): référence indéfinie vers « B3408_tests::T02() »
+collect2: erreur: ld a retourné 1 code d'état d'exécution
+make: *** [ClasseSimple] Erreur 1
+16:26:11 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:27:14: attention : unused variable ‘test’ [-Wunused-variable]
+../B3408_tests.cpp: At global scope:
+../B3408_tests.cpp:122:26: erreur: definition of implicitly-declared ‘B3408_tests::B3408_tests()’
+make: *** [B3408_tests.o] Erreur 1
+16:26:38 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:25:2: erreur: ‘B3408_tests::B3408_tests()’ is private
+../B3408_tests.cpp:29:14: erreur: à l'intérieur du contexte
+make: *** [B3408_tests.o] Erreur 1
+16:26:46 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In function ‘int main()’:
+../B3408_tests.cpp:25:2: erreur: ‘B3408_tests::B3408_tests()’ is private
+../B3408_tests.cpp:29:14: erreur: à l'intérieur du contexte
+make: *** [B3408_tests.o] Erreur 1
+16:27:22 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+./test.o: dans la fonction « main »:
+/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../test.cpp:15: définitions multiples de « main »
+./B3408_tests.o:/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../B3408_tests.cpp:29: défini pour la première fois ici
+./B3408_tests.o: dans la fonction « B3408_tests::B3408_tests() »:
+B3408_tests.cpp:(.text+0x8b6): référence indéfinie vers « B3408_tests::T01() »
+B3408_tests.cpp:(.text+0x908): référence indéfinie vers « B3408_tests::T02() »
+collect2: erreur: ld a retourné 1 code d'état d'exécution
+make: *** [ClasseSimple] Erreur 1
+16:27:24 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+./test.o: dans la fonction « main »:
+/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../test.cpp:15: définitions multiples de « main »
+./B3408_tests.o:/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../B3408_tests.cpp:29: défini pour la première fois ici
+./B3408_tests.o: dans la fonction « B3408_tests::B3408_tests() »:
+B3408_tests.cpp:(.text+0x8b6): référence indéfinie vers « B3408_tests::T01() »
+B3408_tests.cpp:(.text+0x908): référence indéfinie vers « B3408_tests::T02() »
+collect2: erreur: ld a retourné 1 code d'état d'exécution
+make: *** [ClasseSimple] Erreur 1
+16:28:17 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In constructor ‘Tests::Tests()’:
+../B3408_tests.cpp:128:9: erreur: ‘B3408_tests’ has not been declared
+../B3408_tests.cpp:130:9: erreur: ‘B3408_tests’ has not been declared
+make: *** [B3408_tests.o] Erreur 1
+16:28:29 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In constructor ‘Tests::Tests()’:
+../B3408_tests.cpp:128:9: erreur: ‘B3408_tests’ has not been declared
+../B3408_tests.cpp:130:9: erreur: ‘B3408_tests’ has not been declared
+make: *** [B3408_tests.o] Erreur 1
+16:28:40 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+./test.o: dans la fonction « main »:
+/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../test.cpp:15: définitions multiples de « main »
+./B3408_tests.o:/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../B3408_tests.cpp:29: défini pour la première fois ici
+./B3408_tests.o: dans la fonction « Tests::Tests() »:
+B3408_tests.cpp:(.text+0x8b6): référence indéfinie vers « Tests::T01() »
+B3408_tests.cpp:(.text+0x908): référence indéfinie vers « Tests::T02() »
+collect2: erreur: ld a retourné 1 code d'état d'exécution
+make: *** [ClasseSimple] Erreur 1
+16:28:44 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+./test.o: dans la fonction « main »:
+/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../test.cpp:15: définitions multiples de « main »
+./B3408_tests.o:/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../B3408_tests.cpp:29: défini pour la première fois ici
+./B3408_tests.o: dans la fonction « Tests::Tests() »:
+B3408_tests.cpp:(.text+0x8b6): référence indéfinie vers « Tests::T01() »
+B3408_tests.cpp:(.text+0x908): référence indéfinie vers « Tests::T02() »
+collect2: erreur: ld a retourné 1 code d'état d'exécution
+make: *** [ClasseSimple] Erreur 1
+16:29:36 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test.d" -MT"test.d" -o "test.o" "../test.cpp"
+Finished building: ../test.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+./B3408_tests.o: dans la fonction « Tests::Tests() »:
+/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../B3408_tests.cpp:128: référence indéfinie vers « Tests::T01() »
+/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../B3408_tests.cpp:130: référence indéfinie vers « Tests::T02() »
+collect2: erreur: ld a retourné 1 code d'état d'exécution
+make: *** [ClasseSimple] Erreur 1
+16:30:13 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp:85:17: erreur: no ‘bool Tests::T05()’ member function declared in class ‘Tests’
+make: *** [B3408_tests.o] Erreur 1
+16:30:15 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp:85:17: erreur: no ‘bool Tests::T05()’ member function declared in class ‘Tests’
+make: *** [B3408_tests.o] Erreur 1
+16:30:40 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In member function ‘bool Tests::T05()’:
+../B3408_tests.cpp:102:14: erreur: ‘ests’ has not been declared
+../B3408_tests.cpp:102:20: erreur: expected unqualified-id before numeric constant
+../B3408_tests.cpp:102:20: erreur: expected ‘;’ before numeric constant
+../B3408_tests.cpp:102:36: attention : statement has no effect [-Wunused-value]
+../B3408_tests.cpp:103:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [B3408_tests.o] Erreur 1
+16:30:41 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In member function ‘bool Tests::T05()’:
+../B3408_tests.cpp:102:14: erreur: ‘ests’ has not been declared
+../B3408_tests.cpp:102:20: erreur: expected unqualified-id before numeric constant
+../B3408_tests.cpp:102:20: erreur: expected ‘;’ before numeric constant
+../B3408_tests.cpp:102:36: attention : statement has no effect [-Wunused-value]
+../B3408_tests.cpp:103:1: attention : contrôle a atteint la fin non void de la fonction [-Wreturn-type]
+make: *** [B3408_tests.o] Erreur 1
+16:31:07 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:31:09 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+16:31:39 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:31:40 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+16:31:59 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:32:00 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+16:34:47 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:34:50 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+16:42:37 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In member function ‘bool Tests::T02()’:
+../B3408_tests.cpp:44:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:45:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:46:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp: In member function ‘bool Tests::T03()’:
+../B3408_tests.cpp:58:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:59:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:60:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp: In member function ‘bool Tests::T05()’:
+../B3408_tests.cpp:78:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:79:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:80:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp: In member function ‘bool Tests::T06()’:
+../B3408_tests.cpp:92:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:93:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:94:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp: In member function ‘bool Tests::T07()’:
+../B3408_tests.cpp:106:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:107:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:108:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp: In member function ‘bool Tests::T08()’:
+Finished building: ../B3408_tests.cpp
+../B3408_tests.cpp:120:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:121:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:122:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+ 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+../B3408_tests.cpp:123:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:124:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp: In member function ‘bool Tests::T09()’:
+../B3408_tests.cpp:138:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:139:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:140:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:141:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:142:18: attention : deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../B3408_tests.cpp:151:28: attention : ‘chaine’ may be used uninitialized in this function [-Wuninitialized]
+Finished building: ../ListeDMP.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:45:19 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp: In member function ‘bool Tests::T09()’:
+../B3408_tests.cpp:151:28: attention : ‘chaine’ may be used uninitialized in this function [-Wuninitialized]
+Finished building: ../B3408_tests.cpp
+ 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+Finished building: ../Cartography.cpp
+ 
+Building file: ../DMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"DMP.d" -MT"DMP.d" -o "DMP.o" "../DMP.cpp"
+Finished building: ../DMP.cpp
+ 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+Finished building: ../ListeDMP.cpp
+ 
+Building file: ../test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"test.d" -MT"test.d" -o "test.o" "../test.cpp"
+Finished building: ../test.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:45:59 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:46:04 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+16:46:44 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+Finished building: ../Cartography.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:46:46 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+16:48:45 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:48:48 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+16:51:43 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:51:45 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+16:52:23 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+16:52:25 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+17:06:24 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+17:06:26 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+17:16:41 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+../B3408_tests.cpp:21:14: attention : non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+../B3408_tests.cpp:21:30: attention : non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+../B3408_tests.cpp: In constructor ‘Tests::Tests()’:
+../B3408_tests.cpp:167:21: erreur: no matching function for call to ‘Tests::Afficher(int, bool, const char [1])’
+../B3408_tests.cpp:167:21: note: candidate is:
+../B3408_tests.cpp:35:7: note: void Tests::Afficher(int)
+../B3408_tests.cpp:35:7: note:   candidate expects 1 argument, 3 provided
+make: *** [B3408_tests.o] Erreur 1
+17:18:21 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building file: ../Cartography.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"Cartography.d" -MT"Cartography.d" -o "Cartography.o" "../Cartography.cpp"
+Finished building: ../Cartography.cpp
+ 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+../ListeDMP.cpp: In member function ‘long int ListeDMP::Count(char*)’:
+../ListeDMP.cpp:53:53: erreur: cannot convert ‘bool’ to ‘char*’ in assignment
+make: *** [ListeDMP.o] Erreur 1
+17:18:24 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+../ListeDMP.cpp: In member function ‘long int ListeDMP::Count(char*)’:
+../ListeDMP.cpp:53:53: erreur: cannot convert ‘bool’ to ‘char*’ in assignment
+make: *** [ListeDMP.o] Erreur 1
+17:18:30 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+../ListeDMP.cpp: In member function ‘long int ListeDMP::Count(char*)’:
+../ListeDMP.cpp:53:53: erreur: cannot convert ‘bool’ to ‘char*’ in assignment
+make: *** [ListeDMP.o] Erreur 1
+17:19:22 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../ListeDMP.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"ListeDMP.d" -MT"ListeDMP.d" -o "ListeDMP.o" "../ListeDMP.cpp"
+Finished building: ../ListeDMP.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+./B3408_tests.o: dans la fonction « Tests::Tests() »:
+/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../B3408_tests.cpp:166: référence indéfinie vers « Tests::Afficher(int, bool, char*) »
+collect2: erreur: ld a retourné 1 code d'état d'exécution
+make: *** [ClasseSimple] Erreur 1
+17:19:49 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+./B3408_tests.o: dans la fonction « Tests::Tests() »:
+/shares/binomes/B3408/tp1-eclipse-classe-simple (Github)/ClasseSimple/Debug/../B3408_tests.cpp:166: référence indéfinie vers « Tests::Afficher(int, bool, char*) »
+collect2: erreur: ld a retourné 1 code d'état d'exécution
+make: *** [ClasseSimple] Erreur 1
+17:20:19 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+17:20:24 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+17:21:55 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+17:21:57 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+17:22:12 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+17:22:14 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+17:23:37 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+17:23:39 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+17:29:03 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+17:29:04 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».
+17:32:01 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+Building file: ../B3408_tests.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -Wno-write-strings -MMD -MP -MF"B3408_tests.d" -MT"B3408_tests.d" -o "B3408_tests.o" "../B3408_tests.cpp"
+Finished building: ../B3408_tests.cpp
+ 
+Building target: ClasseSimple
+Invoking: Cross G++ Linker
+g++  -o "ClasseSimple"  ./B3408_tests.o ./Cartography.o ./DMP.o ./ListeDMP.o ./test.o   
+Finished building target: ClasseSimple
+ 
+17:32:03 **** Incremental Build of configuration Debug for project ClasseSimple ****
+make all 
+make: Rien à faire pour « all ».

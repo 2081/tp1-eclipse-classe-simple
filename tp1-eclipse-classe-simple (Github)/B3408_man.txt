@@ -1,0 +1,27 @@
+﻿
+Manuel d'utilisation de la fonction Count :
+
+Count
+Syntaxe
+#include <Cartography.h>
+long Count();
+long Count(char* pszDMP);
+Description
+Compte le nombre de DMP dans la liste.
+Compte le nombre de DMP dans la liste dont l'élement est pszDMP.
+ PszDMP 
+Element à rechercher dans la liste.
+
+Valeur de retour
+Nombre de DMP dans la liste (dont l'élement est pszDMP).
+.
+Exemple d’utilisation
+#include "Cartography.h"
+
+int main( )
+{ 
+Cartography cart;
+char* pszDMP ;
+cart.Count(pszDMP); ou cart.Count() ;
+return 0;
+}

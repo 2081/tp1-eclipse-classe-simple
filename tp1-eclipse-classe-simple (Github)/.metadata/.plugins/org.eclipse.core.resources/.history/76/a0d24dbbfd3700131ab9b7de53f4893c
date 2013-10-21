@@ -1,0 +1,44 @@
+/*
+ * B3408_tests.cpp
+ *
+ *  Created on: 18 oct. 2013
+ *      Author: rnicolet
+ */
+
+
+#include <iostream>
+#include "Cartography.h"
+#include "DMP.h"
+#include "ListeDMP.h"
+
+using namespace std;
+
+int main() {
+
+}
+
+bool T01(){
+	ListeDMP ldmp;
+	long c = ldmp.Count();
+	return c == 0 ? true : false;
+}
+
+bool T02(){
+	ListeDMP ldmp;
+	char str_tab[] = {'H','2','O','\0'};
+	char * str = str_tab;
+	DMP d1(0,0,str);
+	char str2_tab[] = {'H','2','O','\0'};
+	char * str2 = str2_tab;
+	DMP d2(2,3,str2);
+	char str3_tab[] = {'H','2','O','\0'};
+	char * str3 = str3_tab;
+	DMP d2(4,5,str3);
+
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+
+	long c = ldmp.Count();
+	return c == 0 ? true : false;
+}
+

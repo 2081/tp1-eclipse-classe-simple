@@ -1,0 +1,157 @@
+/*
+ * B3408_tests.cpp
+ *
+ *  Created on: 18 oct. 2013
+ *      Author: rnicolet
+ */
+
+
+#include <iostream>
+#include "Cartography.h"
+#include "DMP.h"
+#include "ListeDMP.h"
+
+using namespace std;
+
+class Tests
+{
+public :
+	Tests();
+private :
+	bool T01();
+	bool T02();
+	bool T03();
+	bool T04();
+	bool T05();
+	bool T06();
+	bool T07();
+	bool T08();
+	bool T09();
+	bool T10();
+};
+
+int main() {
+	Tests test;
+}
+
+bool Tests::T01(){ // Liste Vide
+	ListeDMP ldmp;
+	long c = ldmp.Count();
+	return c == 0 ? true : false;
+}
+
+bool Tests::T02(){ // 3 dmp totalement differentes
+	ListeDMP ldmp;
+	DMP d1(0,0,"H2O");
+	DMP d2(2,3,"H1O");
+	DMP d3(4,5,"H3O");
+
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+	ldmp.Add(d3);
+
+	long c = ldmp.Count();
+	return c == 3 ? true : false;
+}
+
+bool Tests::T03(){ // 3 dmp differentes, 2 elements identiques
+	ListeDMP ldmp;
+	DMP d1(0,0,"H2O");
+	DMP d2(2,3,"H2O");
+	DMP d3(4,5,"H3O");
+
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+	ldmp.Add(d3);
+
+	long c = ldmp.Count();
+	return c == 3 ? true : false;
+}
+
+bool Tests::T04(){ // Liste Vide
+	ListeDMP ldmp;
+	long c = ldmp.Count("H2O");
+	return c == 0 ? true : false;
+}
+
+bool Tests::T05(){ // 3 dmp totalement differentes
+	ListeDMP ldmp;
+	DMP d1(0,0,"H2O");
+	DMP d2(2,3,"H1O");
+	DMP d3(4,5,"H3O");
+
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+	ldmp.Add(d3);
+
+	long c = ldmp.Count("CO2");
+	return c == 0 ? true : false;
+}
+
+bool Tests::T06(){ // 3 dmp differentes, 2 elements identiques
+	ListeDMP ldmp;
+	DMP d1(0,0,"H2O");
+	DMP d2(2,3,"H2O");
+	DMP d3(4,5,"H3O");
+
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+	ldmp.Add(d3);
+
+	long c = ldmp.Count("CO2");
+	return c == 0 ? true : false;
+}
+
+bool Tests::T07(){ // 3 dmp totalement differentes
+	ListeDMP ldmp;
+	DMP d1(0,0,"H2O");
+	DMP d2(2,3,"H1O");
+	DMP d3(4,5,"H3O");
+
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+	ldmp.Add(d3);
+
+	long c = ldmp.Count("H1O");
+	return c == 1 ? true : false;
+}
+
+bool Tests::T08(){ // 3 dmp totalement differentes
+	ListeDMP ldmp;
+	DMP d0(2,3,"H1O");
+	DMP d1(0,0,"H2O");
+	DMP d2(2,3,"H1O");
+	DMP d3(4,5,"H3O");
+	DMP d4(2,3,"H1O");
+
+	ldmp.Add(d0);
+	ldmp.Add(d1);
+	ldmp.Add(d2);
+	ldmp.Add(d3);
+	ldmp.Add(d4);
+
+	long c = ldmp.Count("H1O");
+	return c == 3 ? true : false;
+}
+
+Tests::Tests()
+{
+	cout<<"Test_01"<<endl;
+	cout<<(T01()?"OK":"PAS OK")<<endl;
+	cout<<"Test_02"<<endl;
+	cout<<(T02()?"OK":"PAS OK")<<endl;
+	cout<<"Test_03"<<endl;
+	cout<<(T03()?"OK":"PAS OK")<<endl;
+	cout<<"Test_04"<<endl;
+	cout<<(T04()?"OK":"PAS OK")<<endl;
+	cout<<"Test_05"<<endl;
+	cout<<(T05()?"OK":"PAS OK")<<endl;
+	cout<<"Test_06"<<endl;
+	cout<<(T06()?"OK":"PAS OK")<<endl;
+	cout<<"Test_07"<<endl;
+	cout<<(T07()?"OK":"PAS OK")<<endl;
+}
+
+
+
+
